@@ -1,0 +1,21 @@
+$font1: "Inter", sans-serif;
+$font2: "Montserrat-300", sans-serif;
+
+@font-face {
+    font-family: $font1;
+    src: url('./fonts/Inter/Inter-VariableFont_slnt,wght.ttf');
+}
+
+@font-face {
+    font-family: $font2;
+    src: url('./fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf');
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: $font1;
+    border: 1px solid rgba(250, 189, 189, 0.335);
+}

@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("./fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+@font-face {
+  font-family: "Montserrat-300", sans-serif;
+  src: url("./fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+}
+
+.btn-1 {
+  height: 40px;
+  border-radius: 40px;
+  padding: 0 24px;
+  border: 1px solid rgba(134, 131, 131, 0.747);
+  letter-spacing: 1px;
+}
+.btn-1:first-letter {
+  text-transform: capitalize;
+}
+
+.btn-2 {
+  font-size: 0.6rem;
+  height: 30px;
+  border-radius: 7px;
+  padding: 0 10px;
+  border: 1px solid rgba(134, 131, 131, 0.335);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.btn-2:first-letter {
+  text-transform: capitalize;
+}
+
+.btn-complementary-left {
+  height: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 0px 12px 0 24px;
+  border: 1px solid pink;
+  letter-spacing: 1px;
+}
+.btn-complementary-left:first-letter {
+  text-transform: capitalize;
+}
+
+.btn-complementary-right {
+  height: 40px;
+  padding: 0 24px 0 12px;
+  border: 1px solid pink;
+  background: pink;
+  color: red;
+  filter: brightness(120%);
+  letter-spacing: 1px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.btn-complementary-right:first-letter {
+  text-transform: capitalize;
+}
+
+.nav-container {
+  padding: 10px;
+}
+.nav-container nav {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+.nav-container nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-container nav .rigth-part {
+  min-width: 280px;
+  justify-content: flex-end;
+}
+.nav-container nav .rigth-part .btn-1 {
+  margin-left: 10px;
+}
+
+.form-page-container {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+.form-page-container .form-container {
+  border: 1px solid pink;
+  padding: 10px;
+}
+.form-page-container .form-container h2 {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.form-page-container .form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 260px;
+}
+.form-page-container .form-container form .radios-container {
+  display: flex;
+  justify-content: center;
+}
+.form-page-container .form-container form .radios-container label {
+  cursor: pointer;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 10px;
+  border: 1px solid pink;
+  transition: 0.2s;
+  margin: 0;
+}
+.form-page-container .form-container form .radios-container .label-left {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.form-page-container .form-container form .radios-container .label-rigth {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.form-page-container .form-container form .radios-container input[type=radio] {
+  display: none;
+}
+.form-page-container .form-container form .radios-container input[type=radio]:checked + label {
+  background: pink;
+  color: red;
+  transform: scale(1.1);
+  filter: brightness(120%);
+}
+.form-page-container .form-container form label {
+  margin: 10px;
+  font-size: 0.9rem;
+}
+.form-page-container .form-container form input {
+  margin: 10px;
+}
+.form-page-container .form-container form input[type=text] {
+  margin: 10px;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+.form-page-container .form-container form input[type=password] {
+  padding: 10px;
+}
+.form-page-container .form-container form .btn-container {
+  display: flex;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

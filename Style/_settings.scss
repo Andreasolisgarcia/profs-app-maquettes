@@ -51,6 +51,11 @@ button{
         }
     
 }
+.btn-cap{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
 
 .btn-complementary-left{
     height: 40px;
@@ -58,7 +63,7 @@ button{
     border-bottom-left-radius: 20px;
     padding: 0px 12px 0 24px; 
     border: 1px solid pink;
-    letter-spacing: 1px;
+    
     
         &:first-letter{
             text-transform: capitalize;
@@ -72,7 +77,6 @@ button{
     background: pink;
     color: red;
     filter: brightness(120%);
-    letter-spacing: 1px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     

@@ -36,7 +36,7 @@
                         letter-spacing: 2px;
                         text-transform: uppercase;
                         user-select: none;
-                        padding: 10px;
+                       
                         border: 1px solid pink;
                         transition: 0.2s;
                         margin: 0;
@@ -46,10 +46,12 @@
                     .label-left{
                         border-top-left-radius: 20px;
                         border-bottom-left-radius: 20px;
+                        padding: 12px 12px 12px 24px; 
                     }
                     .label-rigth{
                         border-top-right-radius: 20px;
                         border-bottom-right-radius: 20px;
+                        padding: 12px 24px 12px 12px; 
                     }
             
                     input[type="radio"] {
@@ -87,7 +89,7 @@
                 }
                 .btn-container{
                     display: flex;
-                    margin: 0 auto;
+                    margin: 12px auto;
                 }
                 
                }

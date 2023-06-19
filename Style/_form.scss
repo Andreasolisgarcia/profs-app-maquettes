@@ -8,7 +8,7 @@
 
    
     .form-container{
-        border: 1px solid pink;
+        box-shadow: 0 0px 22px 6px rgba(252, 164, 164, 0.2);
         padding: 10px;
         h2{
             display: flex;
@@ -23,6 +23,7 @@
                 flex-direction: column;
                 justify-content: space-around;
                 min-width: 260px;
+               
             
                 .radios-container{
                     display: flex;
@@ -75,7 +76,7 @@
                 }
                 input{
                     margin: 10px;
-            
+                   
                     &[type="text"]{
                         margin: 10px;
                         font-size: 0.8rem;
@@ -87,6 +88,7 @@
                     }
                     
                 }
+
                 .btn-container{
                     display: flex;
                     margin: 12px auto;

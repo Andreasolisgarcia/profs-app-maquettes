@@ -182,23 +182,23 @@ a {
   margin: 12px auto;
 }
 
-header {
+.header-landing-page {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 90vh;
 }
-header .header-container {
+.header-landing-page .header-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-header .header-container h2 {
+.header-landing-page .header-container h2 {
   margin: 30px 0;
 }
-header .header-container .search-bar-container {
+.header-landing-page .header-container .search-bar-container {
   display: flex;
   justify-content: center;
   background: white;
@@ -206,11 +206,101 @@ header .header-container .search-bar-container {
   box-shadow: 0 0px 22px 6px rgba(0, 0, 0, 0.1);
   width: 300px;
 }
-header .header-container .search-bar-container input {
+.header-landing-page .header-container .search-bar-container input {
   margin: 5px;
   padding: 10px;
   font-size: 1.1rem;
   font-family: "DMSerif";
   border: none;
   outline: none;
+}
+
+.header-courses-container {
+  height: 150px;
+  background: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-courses-container h2 {
+  margin-bottom: 20px;
+}
+.header-courses-container .search-bar-container {
+  display: flex;
+  justify-content: center;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 0px 22px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+.header-courses-container .search-bar-container input {
+  margin: 5px;
+  padding: 7px;
+  font-size: 1.1rem;
+  font-family: "DMSerif";
+  border: none;
+  outline: none;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.card {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  background: white;
+}
+.card .header {
+  border-radius: 20px 20px 0 0;
+  background: green;
+  padding: 10px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .body {
+  padding: 10px;
+  color: green;
+}
+.card .body h2 {
+  padding: 10px 0;
+}
+.card .footer {
+  padding: 10px;
+  margin-top: auto;
+  font-size: 0.85rem;
+  color: skyblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.card .footer .more-btn {
+  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+  font-size: 1.7rem;
+  color: skyblue;
+  background: rgb(3, 73, 101);
+  border: none;
+  transition: transform 0.6s ease;
+}
+.card .footer .more-btn:hover {
+  color: green;
+  background: white;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.02);
 }/*# sourceMappingURL=style.css.map */

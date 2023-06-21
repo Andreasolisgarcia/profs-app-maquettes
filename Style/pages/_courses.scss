@@ -1,0 +1,40 @@
+.header-courses-container{
+height: 150px;
+background: green;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+h2{
+    margin-bottom: 20px;
+}
+
+.search-bar-container{
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 0px 22px 6px rgba(0, 0, 0, 0.1);
+    
+   width: 300px;
+   input{
+    margin: 5px;
+    padding: 7px;
+    font-size: 1.1rem;
+    font-family: "DMSerif";
+    border: none;
+    outline:none;
+   }
+}
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 50px;
+    gap: 30px;
+
+}

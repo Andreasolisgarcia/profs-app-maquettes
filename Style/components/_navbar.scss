@@ -1,29 +1,42 @@
-.nav-container{
-    padding: 10px;
-
+.nav-container {
+    overflow: hidden;
+    position: relative; /* Ajoutez cette propriété pour créer un contexte d'empilement */
+  }
   
-    nav{
-        width: 90vw;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-
-        height: 40px;
-
-        ul {
-            display: flex;
-            justify-content: space-between;
-        }
-        .rigth-part {
-            min-width: 280px;
-            justify-content: flex-end;
-            
-            .btn-1{
-                margin-left: 10px;
-            }
-
-        }
+  nav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #689ba1;
+    position: relative; /* Ajoutez cette propriété pour créer un contexte d'empilement */
+  
+    ul {
+      display: flex;
+      justify-content: space-between;
     }
+  
+    .right-part {
+      min-width: 280px;
+      justify-content: flex-end;
+  
+      .btn-1 {
+        margin-left: 10px;
+      }
+    }
+  }
+  
+  .logo {
+    width: 60px;    /* Ajustez la largeur selon vos besoins */
+    height: auto;    /* Permet à la hauteur de s'adapter automatiquement */
+    padding: 5px;    /* Ajoutez un espace interne pour la bordure */
+    margin-right: 10px;    /* Ajoutez une marge à droite pour l'espace */
 }
+
+.logo img {
+    max-width: 100%;    /* Permet à l'image de s'adapter à la largeur de la classe .logo */
+    height: auto;    /* Permet à la hauteur de s'adapter automatiquement */
+}
+

@@ -1,7 +1,9 @@
-$color-up: pink;
+$color-up: rgba(84, 211, 167, 0.319);
 $contrast:skyblue;
 $clair: white;
 $gray: gray; 
+$star-text: green;
+$star: rgb(255, 204, 0);
  
  
  .card-course{
@@ -40,8 +42,29 @@ $gray: gray;
     .color-part-2{
         background: $color-up;
         border-radius: 0 0 25px 25px;
-        height: 150px;
+        height: 200px;
+        position: relative;
 
+  
+    .star {
+     width: 37px;
+     height: 37px;
+     background-color: $star;
+     clip-path: polygon(50% 0%, 65% 30%, 98% 35%, 74% 59%, 79% 91%, 50% 79%, 19% 91%, 25% 59%, 2% 35%, 35% 30%);
+     position: absolute;
+     top: 13px;
+     right: 8px;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     p{
+        font-size: 0.7rem;
+        color:  $star-text;
+        font-weight: bold;
+     }
+}
         .info-content{
             background: $clair;
             border-radius: 25px 0px 25px 25px;
@@ -111,7 +134,9 @@ $gray: gray;
           padding: 10px 14px;
           
         }
-
+        &:hover {
+            transform: scale(1.02); 
+          }
   }
   
  

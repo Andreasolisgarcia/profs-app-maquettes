@@ -227,7 +227,7 @@ a {
 }
 .header-courses-container .search-bar-container {
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
   background: white;
   border-radius: 50px;
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
@@ -279,13 +279,32 @@ a {
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
-  background: pink;
+  background: rgba(84, 211, 167, 0.319);
   border-radius: 25px 25px 25px 0;
 }
 .card-course .color-part-2 {
-  background: pink;
+  background: rgba(84, 211, 167, 0.319);
   border-radius: 0 0 25px 25px;
-  height: 150px;
+  height: 200px;
+  position: relative;
+}
+.card-course .color-part-2 .star {
+  width: 37px;
+  height: 37px;
+  background-color: rgb(255, 204, 0);
+  -webkit-clip-path: polygon(50% 0%, 65% 30%, 98% 35%, 74% 59%, 79% 91%, 50% 79%, 19% 91%, 25% 59%, 2% 35%, 35% 30%);
+          clip-path: polygon(50% 0%, 65% 30%, 98% 35%, 74% 59%, 79% 91%, 50% 79%, 19% 91%, 25% 59%, 2% 35%, 35% 30%);
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-course .color-part-2 .star p {
+  font-size: 0.7rem;
+  color: green;
+  font-weight: bold;
 }
 .card-course .color-part-2 .info-content {
   background: white;
@@ -322,7 +341,7 @@ a {
   width: 30px;
   font-size: 1.7rem;
   color: skyblue;
-  background: pink;
+  background: rgba(84, 211, 167, 0.319);
   border: none;
   transition: transform 0.6s ease;
 }
@@ -335,7 +354,7 @@ a {
 }
 .card-course .color-part-2 .info-content .footer .more-btn:hover {
   background: skyblue;
-  color: pink;
+  color: rgba(84, 211, 167, 0.319);
   cursor: pointer;
 }
 .card-course .image-content,
@@ -345,4 +364,7 @@ a {
   justify-content: space-around;
   align-items: center;
   padding: 10px 14px;
+}
+.card-course:hover {
+  transform: scale(1.02);
 }/*# sourceMappingURL=style.css.map */

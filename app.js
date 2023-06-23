@@ -1,16 +1,24 @@
-window.addEventListener('scroll', function() {
-  var fadeElements = document.querySelectorAll('.fade-in');
-  for (var i = 0; i < fadeElements.length; i++) {
-    var element = fadeElements[i];
-    var position = element.getBoundingClientRect();
+// Sélectionnez tous les éléments avec la classe "texte-container"
+const textContainers = document.querySelectorAll('.texte-container');
 
-    // Ajoutez la classe d'animation appropriée en fonction de la position de l'élément
-    if (position.top <= window.innerHeight && position.bottom >= 0) {
-      if (element.classList.contains('left-to-right')) {
-        element.classList.add('show-from-left');
-      } else if (element.classList.contains('right-to-left')) {
-        element.classList.add('show-from-right');
-      }
-    }
-  }
-});
+// Fonction pour animer l'apparition du texte
+function animateText() {
+  // Parcours de chaque élément "texte-container"
+  textContainers.forEach((container, index) => {
+    // Calcul du délai d'apparition basé sur l'index de l'élément
+    const delay = index * 1000; // 1000ms = 1 seconde
+
+    // Définition des propriétés de départ de l'animation
+    container.style.opacity = '0';
+    container.style.transform = 'translateY(20px)';
+
+    // Utilisation de setTimeout pour appliquer le délai avant le début de l'animation
+    setTimeout(() => {
+      // Ajout des classes pour animer l'apparition du texte
+      container.classList.add('fade-in');
+    }, delay);
+  });
+}
+
+// Appel de la fonction d'animation lorsque le document est prêt
+document.addEventListener('DOMContentLoaded', animateText);

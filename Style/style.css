@@ -365,7 +365,6 @@ h2 {
 
 .header-courses-container {
   height: 150px;
-  background: green;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -376,10 +375,10 @@ h2 {
 }
 .header-courses-container .search-bar-container {
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
   background: white;
   border-radius: 50px;
-  box-shadow: 0 0px 22px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
   width: 300px;
 }
 .header-courses-container .search-bar-container input {
@@ -400,56 +399,120 @@ h2 {
   gap: 30px;
 }
 
-.card {
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+@media screen and (max-width: 1052px) {
+  .container {
+    grid-template-columns: 50% 50%;
+  }
+}
+.card-course {
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+}
+.card-course .color-part-1 {
   background: white;
 }
-.card .header {
-  border-radius: 20px 20px 0 0;
-  background: green;
-  padding: 10px;
-  height: 50%;
+.card-course .color-part-1 .card-img-container {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  height: 145px;
+  width: 145px;
+  border-radius: 50%;
+  background: white;
+  padding: 3px;
+}
+.card-course .color-part-1 .image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+  background: rgba(84, 211, 167, 0.319);
+  border-radius: 25px 25px 25px 0;
+}
+.card-course .color-part-2 {
+  background: rgba(84, 211, 167, 0.319);
+  border-radius: 0 0 25px 25px;
+  height: 200px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.card-course .color-part-2 .star {
+  width: 37px;
+  height: 37px;
+  background-color: rgb(255, 204, 0);
+  -webkit-clip-path: polygon(50% 0%, 65% 30%, 98% 35%, 74% 59%, 79% 91%, 50% 79%, 19% 91%, 25% 59%, 2% 35%, 35% 30%);
+          clip-path: polygon(50% 0%, 65% 30%, 98% 35%, 74% 59%, 79% 91%, 50% 79%, 19% 91%, 25% 59%, 2% 35%, 35% 30%);
+  position: absolute;
+  top: 10px;
+  right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card .body {
-  padding: 10px;
+.card-course .color-part-2 .star p {
+  font-size: 0.65rem;
   color: green;
+  font-weight: bold;
 }
-.card .body h2 {
-  padding: 10px 0;
+.card-course .color-part-2 .info-content {
+  background: white;
+  border-radius: 25px 0px 25px 25px;
+  height: 100%;
 }
-.card .footer {
-  padding: 10px;
-  margin-top: auto;
+.card-course .color-part-2 .info-content .name {
+  font-size: 18px;
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.card-course .color-part-2 .info-content .course-title {
+  display: flex;
+  text-align: center;
+  font-size: 0.95rem;
+}
+.card-course .color-part-2 .info-content .footer {
+  max-height: 20px;
+  width: 100%;
   font-size: 0.85rem;
   color: skyblue;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
-.card .footer .more-btn {
+.card-course .color-part-2 .info-content .footer .more-btn {
+  position: relative;
   border-radius: 50px;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   font-size: 1.7rem;
   color: skyblue;
-  background: rgb(3, 73, 101);
+  background: rgba(84, 211, 167, 0.319);
   border: none;
   transition: transform 0.6s ease;
 }
-.card .footer .more-btn:hover {
-  color: green;
-  background: white;
+.card-course .color-part-2 .info-content .footer .more-btn:before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(-2px);
+}
+.card-course .color-part-2 .info-content .footer .more-btn:hover {
+  background: skyblue;
+  color: rgba(84, 211, 167, 0.319);
   cursor: pointer;
 }
-.card:hover {
+.card-course .image-content,
+.card-course .info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+}
+.card-course:hover {
   transform: scale(1.02);
 }
 

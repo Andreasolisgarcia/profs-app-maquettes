@@ -1,63 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/style.css" />
     <title>log in</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="nav-container">
-        <nav>
-          <ul>
-            <li>TheBestLogo</li>
-          </ul>
-  
-          <ul class="rigth-part">
-            <li>
-              <button class="btn-1">Courses</button>
-            </li>
-            <li>
-              <button class="btn-1">connexion</button>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul>
+          <li>TheLogo</li>
+        </ul>
+
+        <ul class="rigth-part">
+          <li>
+            <button class="btn-1">Courses</button>
+          </li>
+          <li>
+            <button class="btn-1">connexion</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="form-page-container">
+      <div class="form-container">
+        <h2>Log in</h2>
+        <form action="">
+          <div class="radios-container">
+            <input type="radio" id="teacher" name="user-type" />
+            <label class="label-left" for="teacher">Teacher</label>
 
-        <div class="form-container">
-            <h2>Log in</h2>
-            <form action="">
-                <div class="radios-container">
-                    <input type="radio" id="teacher" name="user-type">
-                    <label class="label-left" for="teacher">Teacher</label>
-    
-                    <input type="radio" id="student" name="user-type" checked>
-                    <label class="label-rigth" for="student">Student</label>
-                </div>
-                
-                
-                <label for="">email :</label>
-                <input type="text" placeholder="youremail@exemple.com">
-                <label for="">password :</label>
-                <input type="password" placeholder="tell nobody...">
-                <div class="btn-container">
-                   <button class="btn-complementary-left btn-cap"><a href="Sign_in.html">sign in</a></button>
-                    <button  class= "btn-complementary-right btn-cap" type='submit'>Log in</button>
-                </div>
-                
-            </form>
-        </div>
+            <input type="radio" id="student" name="user-type" checked />
+            <label class="label-rigth" for="student">Student</label>
+          </div>
 
+          <label for="">email :</label>
+          <input type="text" placeholder="youremail@exemple.com" />
+          <label for="">password :</label>
+          <input type="password" placeholder="tell nobody..." />
+          <div class="btn-container">
+            <button class="btn-complementary-left btn-cap">
+              <a href="Sign_in.html">sign in</a>
+            </button>
+            <button class="btn-complementary-right btn-cap" type="submit">
+              Log in
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
 
-    
-
-    <footer>
-
-    </footer>
-</body>
-
-
+    <footer></footer>
+  </body>
 </html>

@@ -1,93 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Style/style.css">
-  <title>Find a prof</title>
-</head>
+    <title>Find a prof</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <li>TheLogo</li>
+        </ul>
 
-<body>
-  <div class="nav-container">
-    <nav>
-      <ul>
-        <li class="logo">
-          <img src="Style/images/logo.png" alt="Logo" />
-        </li>
-      </ul>
-
-      <ul class="right-part">
-        <li>
-          <button class="btn-3">A propos</button>
-        </li>
-        <li>
-          <button class="btn-3">Contact</button>
-        </li>
-        <li>
-          <button class="btn-3">Se connecter</button>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
-  <header class="header-landing-page">
-    <div class="banniere-landing-page">
-      <img src="Style/images/banniere.png" alt="Bannière" />
+        <ul class="rigth-part">
+          <li>
+            <button class="btn-1 nav-btn">Courses</button>
+          </li>
+          <li>
+            <button class="btn-1 nav-btn">connexion</button>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="header-container">
-      <h2>What would you like to know?</h2>
-      <div class="search-bar">
-        <select>
-          <option value="option1">Tout niveaux</option>
-          <option value="option2">Primaire</option>
-          <option value="option3">Collège</option>
-          <option value="option4">Lycée</option>
-          <option value="option5">Supérieur</option>
-        </select>
-        <input type="text" placeholder="Recherche">
-        <button>Rechercher</button>
+
+    <header>
+      <div class="header-landing-page">
+        <div class="header-left">
+          <div class="text">
+            <h1>What would you like to learn today?</h1>
+            <h2>
+              Remember a new <span class="tutor">Tutor </span>means new...
+            </h2>
+          </div>
+          <div class="typing-text">
+            <h2>
+              <span class="auto-type"></span>
+            </h2>
+          </div>
+
+          <div class="search-bar-container">
+            <div class="search-bar">
+              <input type="text" placeholder="Search" />
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-right"></div>
+      </div>
+    </header>
+
+    <div class="card-slider">
+      <div class="top-wave">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img">
+              <img
+                src="./Style/img/profile-picture.png"
+                alt="img"
+                draggable="false"
+              />
+            </div>
+            <h2>Blanche Pearson</h2>
+            <span>Sales Manager</span>
+          </li>
+          <li class="card">
+            <div class="img">
+              <img
+                src="./Style/img/profile-picture.png"
+                alt="img"
+                draggable="false"
+              />
+            </div>
+            <h2>Joenas Brauers</h2>
+            <span>Web Developer</span>
+          </li>
+          <li class="card">
+            <div class="img">
+              <img
+                src="./Style/img/profile-picture.png"
+                alt="img"
+                draggable="false"
+              />
+            </div>
+            <h2>Lariach French</h2>
+            <span>Online Teacher</span>
+          </li>
+          <li class="card">
+            <div class="img">
+              <img
+                src="./Style/img/profile-picture.png"
+                alt="img"
+                draggable="false"
+              />
+            </div>
+            <h2>James Khosravi</h2>
+            <span>Freelancer</span>
+          </li>
+          <li class="card">
+            <div class="img">
+              <img
+                src="./Style/img/profile-picture.png"
+                alt="img"
+                draggable="false"
+              />
+            </div>
+            <h2>Kristina Zasiadko</h2>
+            <span>Bank Manager</span>
+          </li>
+          <li class="card">
+            <div class="img">
+              <img
+                src="./Style/img/profile-picture.png"
+                alt="img"
+                draggable="false"
+              />
+            </div>
+            <h2>Donald Horton</h2>
+            <span>App Designer</span>
+          </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+
+      <div class="bottom-wave">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </div>
-  </header>
 
-  <div class="second-container">
-    <div class="video-container">
-      <video src="Style/videos/1.mov" loop autoplay muted></video>
-    </div>
-    <div class="texte-container">
-      <div class="text left-to-right fade-in">
-        <h3>1. Recherchez</h3>
-        <p>Consultez librement les profils et contactez votre fantastique professeur selon vos critères (tarifs,
-          diplôme, avis, cours à domicile ou par webcam).</p>
+    <div class="steps-container">
+      <div class="title">
+        <h2>Getting Started is Easy !</h2>
       </div>
+      <section class="number-to-the-left">
+        <div class="num-container">
+          <div class="num">
+            <h3>1</h3>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <h2>Discover your interests</h2>
+            <div class="step-details">
+              <p>
+                Explore a wide range of topics and subjects that match your
+                interests and goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="number-to-the-right">
+        <div class="container">
+          <div>
+            <h2>Connect with experienced tutors</h2>
+            <div class="step-details">
+              <p>
+                Explore their profiles, qualifications, and teaching approach to
+                find the perfect fit for your learning journey.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="num-container">
+          <div class="num">
+            <h3>2</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="number-to-the-left">
+        <div class="num-container">
+          <div class="num">
+            <h3>3</h3>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <h2>Book a lesson or enroll in a course</h2>
+            <div class="step-details">
+              <p>
+                Start your learning journey with ease and convenience. Register
+                and manage your lessons.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="centered">
+        <div class="text-container">
+          <div>
+            <h2>And be part of the learning community !</h2>
+            <div class="step-details">
+              <p>
+                Connect with fellow learners, participate in discussions, and
+                exchange knowledge and insights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <div class="text right-to-left fade-in">
-      <h3>2. Contactez</h3>
-      <p>Rapides comme l’éclair, les enseignants vous répondent en quelques heures ! Et si vous ne trouvez pas tout de
-        suite le professeur idéal, notre équipe sera là pour vous aider.</p>
-    </div>
-    <div class="video-container">
-      <video src="Style/videos/2.mov" loop autoplay muted></video>
-    </div>
+    <footer>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <i class="fas fa-brain"></i>
+            <span class="logo_name">TheLogo</span>
+          </div>
+        
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">TheLogo</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Get started</a></li>
+          </ul>
+          
+          <ul class="box">
+            <li class="link_name">My account</li>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Prefrences</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Courses</li>
+            <li><a href="#">Look for Tutors</a></li>
+            <li><a href="#">Check the courses</a></li>
+          </ul>
+          <ul class="box input-box">
+            <li class="link_name">Subscribe</li>
+            <li><input type="text" placeholder="Enter your email"></li>
+            <li> <button class="btn-1 nav-btn">subscribe</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text">Copyright © 2023<a href="#"> TheProfApp</a>All rights reserved</span>
+        </div>
+      </div>
 
+    </footer>
 
-
-    <div class="video-container">
-      <video src="Style/videos/3.mov" loop autoplay muted></video>
-    </div>
-    <div class="text left-to-right fade-in">
-      <h3>3. Organisez</h3>
-      <p>Échangez et programmez vos cours particuliers simplement depuis votre messagerie avec votre professeur ou
-        votre coach.</p>
-    </div>
-
-  </div>
-
-
-  <script src="app.js"></script>
-</body>
-
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./script/landing_page.js"></script>
+  </body>
 </html>
